@@ -30,7 +30,7 @@ services:
       - ./.env
     volumes:
       - /home/node/app/server/node_modules
-      - ./server:/home/node/app/server
+      # - ./server:/home/node/app/server
     depends_on:
       - 'mdb'
 
@@ -43,7 +43,7 @@ services:
       - ./.env
     volumes:
       - /home/node/app/client/node_modules
-      - ./client:/home/node/app/client
+      # - ./client:/home/node/app/client
     stdin_open: true
     depends_on:
       - 'server'
