@@ -1,0 +1,74 @@
+{
+  "superheroes": [
+    {
+      "id": "10",
+      "name": "Black Panther",
+      "alterEgo": "T'Chala",
+      "sidekick": "AdannaShuri",
+      "age": "42"
+    },
+    {
+      "id": "1",
+      "name": "Batman",
+      "alterEgo": "Bruce Wayne",
+      "sidekick": "Jason Todd",
+      "age": "52"
+    },
+    {
+      "id": "2",
+      "name": "Superman",
+      "alterEgo": "Clark Kent",
+      "sidekick": "Louis Lane",
+      "age": "35"
+    },
+    {
+      "id": "3",
+      "name": "Wonder Woman",
+      "alterEgo": "Princess Diana",
+      "sidekick": "Steve Trevor",
+      "age": "800"
+    },
+    {
+      "id": "4",
+      "name": "Ironman",
+      "alterEgo": "Tony Stark",
+      "sidekick": "None",
+      "age": "52"
+    },
+    {
+      "id": "5",
+      "name": "CatWoman",
+      "alterEgo": "Selina Kyle",
+      "sidekick": "Holly Robinson",
+      "age": "25"
+    },
+    {
+      "id": "6",
+      "name": "Captain America",
+      "alterEgo": "Steve Rogers",
+      "sidekick": "None",
+      "age": "400"
+    },
+    {
+      "id": "7",
+      "name": "Hulk",
+      "alterEgo": "Bruce Banner",
+      "sidekick": "None",
+      "age": "42"
+    },
+    {
+      "id": "8",
+      "name": "Spiderman",
+      "alterEgo": "Peter Parker",
+      "sidekick": "Mary Jane",
+      "age": "20"
+    },
+    {
+      "id": "9",
+      "name": "Thor",
+      "alterEgo": "Thor",
+      "sidekick": "None",
+      "age": "1800"
+    }
+  ]
+}

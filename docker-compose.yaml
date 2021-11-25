@@ -1,0 +1,53 @@
+version: '3'
+
+services:
+  mdb:
+    container_name: mdb
+    image: mongo
+    ports:
+      - 27017:27017
+    env_file:
+      - ./.env
+    volumes:
+      - mdbData:/data/db
+
+  mongo-express:
+    container_name: mdb-express
+    image: mongo-express
+    ports:
+      - 8080:8081
+    env_file:
+      - ./.env
+    depends_on:
+      - 'mdb'
+
+  server:
+    container_name: server
+    build: ./server
+    ports:
+      - 5000:5000
+    env_file:
+      - ./.env
+    volumes:
+      - /home/node/app/server/node_modules
+      - ./server:/home/node/app/server
+    depends_on:
+      - 'mdb'
+
+  client:
+    container_name: client
+    build: ./client
+    ports:
+      - 3000:3000
+    env_file:
+      - ./.env
+    volumes:
+      - /home/node/app/client/node_modules
+      - ./client:/home/node/app/client
+    stdin_open: true
+    depends_on:
+      - 'server'
+
+volumes:
+  mdbData:
+    driver: local
